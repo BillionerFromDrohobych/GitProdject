@@ -78,7 +78,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         switch (name) {
             case "Kiev":
                 cityData.clear();
-                cityData.add(new City("Kiev Politechnik Institute", R.drawable.kiev, "geo:50.454978,30.445443", "0", true, "vul. Saint Ostapuchi"));
+                cityData.add(new City("Kiev Politechnik Institute", R.drawable.kpi, "geo:50.454978,30.445443", "0", true, "vul. Saint Ostapuchi"));
                 cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, "", "0", true,"vul. Saint Ostapuchi"));
             break;
             case "Lviv":
