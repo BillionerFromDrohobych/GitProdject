@@ -37,10 +37,9 @@ public class ActivityActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity);
         cityList = new ArrayList<>();
-
         cityList.add(new City("Kiev", R.drawable.kiev, "", "s", false, "vul. Saint Ostapuchi"));
-        cityList.add(new City("Drohobych", R.drawable.drogobych, "", "0", false, "vul. Saint Ostapuchi"));
         cityList.add(new City("Lviv", R.drawable.lviw, "", "0", false, "vul. Saint Ostapuchi"));
+        cityList.add(new City("Drohobych", R.drawable.drogobych, "", "0", false, "vul. Saint Ostapuchi"));
         cityList.add(new City("London", R.drawable.london, "", "0", false, "vul. Saint Ostapuchi"));
         cityList.add(new City("Kharkov", R.drawable.kharkiv, "", "0", false, "vul. Saint Ostapuch"));
          rv = (RecyclerView) findViewById(R.id.cityRecyclerView);

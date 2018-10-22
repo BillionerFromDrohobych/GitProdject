@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,7 +17,7 @@ ImageView imgview;
 ImageButton imageButton;
 Intent intent1;
 TextView tx3;
-
+Button button;
     String geo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,8 @@ TextView tx3;
         String name = intent.getExtras().getString("name");
         String adress = intent.getExtras().getString("adress");
         int imgurl = intent.getExtras().getInt("imgurl");
+        button = findViewById(R.id.button);
+        button.setOnClickListener(this);
 
        geo = intent.getExtras().getString("location");
         imgview = (ImageView) findViewById(R.id.imageView2);
@@ -48,6 +51,12 @@ TextView tx3;
                 intent1.setData(Uri.parse(geo));
                 startActivity(intent1);
                 break;
+            case R.id.button:
+                intent1 = new Intent(this, ActivityActivity.class);
+
+                startActivity(intent1);
+                break;
+
         }
     }
 }
