@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
 
     android:baselineAligned="false"
     android:orientation="vertical"
@@ -34,11 +35,11 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="262dp"
+        android:layout_width="261dp"
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/textView"
-        android:layout_marginEnd="61dp"
+        android:layout_marginEnd="70dp"
         android:layout_weight="8"
         android:text="Location"
         android:textAlignment="gravity"
@@ -46,10 +47,11 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/textView"
+        android:layout_marginTop="-3dp"
         android:layout_weight="1"
         android:foreground="@drawable/maps_button"
         app:srcCompat="@android:drawable/ic_menu_mapmode" />
@@ -66,8 +68,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
         app:srcCompat="@drawable/button" />
