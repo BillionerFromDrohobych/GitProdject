@@ -3,6 +3,8 @@ package misterpanchak.com.ostapuchi;
 public class City {
     private String Name;
     private int imgUrl;
+    private int imgUrl1;
+    private int imgUrl2;
     private String location;
     private String desctription;
     private boolean sightorcity;
@@ -10,9 +12,11 @@ public class City {
 
 
 
-    public City(String name, int imgUrl, String location, String desctriptionk,boolean sightorcity, String adress) {
+    public City(String name, int imgUrl,int imgUrl1,int imgUrl2, String location, String desctriptionk,boolean sightorcity, String adress) {
         Name = name;
         this.imgUrl = imgUrl;
+        this.imgUrl1 = imgUrl1;
+        this.imgUrl2 = imgUrl2;
         this.sightorcity = sightorcity;
         this.adress = adress;
 
@@ -69,5 +73,21 @@ public class City {
 
     public void setAdress(String adress) {
         this.adress = adress;
+    }
+
+    public int getImgUrl1() {
+        return imgUrl1;
+    }
+
+    public void setImgUrl1(int imgUrl1) {
+        this.imgUrl1 = imgUrl1;
+    }
+
+    public int getImgUrl2() {
+        return imgUrl2;
+    }
+
+    public void setImgUrl2(int imgUrl2) {
+        this.imgUrl2 = imgUrl2;
     }
 }

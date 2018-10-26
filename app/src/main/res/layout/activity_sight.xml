@@ -55,16 +55,6 @@
         android:foreground="@drawable/maps_button"
         android:background="@null"/>
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@null"
-        android:foreground="@drawable/button_back"/>
 
     <ImageView
         android:id="@+id/imageView"

@@ -54,6 +54,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
               choise( cityData.get(i).getName(),
                       cityData.get(i).getImgUrl(),
+                      cityData.get(i).getImgUrl1(),
+                      cityData.get(i).getImgUrl2(),
                       cityData.get(i).getLocation(),
                       cityData.get(i).getDesctription(),
                       cityData.get(i).getSightorcity(),
@@ -71,20 +73,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         notifyDataSetChanged();
     }*/
 
-    public void choise(String name, int imgurl, String location, String desctription, boolean sightorcity, String adress) {
+    public void choise(String name, int imgurl, int imgUrl1, int imgUrl2, String location, String desctription, boolean sightorcity, String adress) {
         intent = new Intent(ccontext, SightActivity.class);
 
         if(sightorcity ==false){
         switch (name) {
             case "Kyiv":
                 cityData.clear();
-                cityData.add(new City("Kiev Politechnic Institute", R.drawable.kpi, "geo:50.454978,30.445443?q=Igor Sikorsky Kyiv Polytechnic Institute", "0", true, "37, Prosp.Peremohy, Solomyanskyi district, Kyiv, Ukraine, 03056"));
-                cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev, "", "0", true,"vul. Saint Ostapuchi"));
+                cityData.add(new City("Kiev Politechnic Institute", R.drawable.kpi,0,0, "geo:50.454978,30.445443?q=Igor Sikorsky Kyiv Polytechnic Institute", "0", true, "37, Prosp.Peremohy, Solomyanskyi district, Kyiv, Ukraine, 03056"));
+                cityData.add(new City("Taras Shevchenko National University of Kyiv", R.drawable.kiev,0,0, "", "0", true,"vul. Saint Ostapuchi"));
             break;
             case "Lviv":
                 cityData.clear();
-                cityData.add(new City("Italian courtyard", R.drawable.lviw, "geo:49.841562,24.031144?q=Italian courtyard", "0", true,"Rynok Square, 6, L'viv, L'vivs'ka oblast, 79000"));
-                cityData.add(new City("Town hall in Lviv", R.drawable.townhalllviv, "geo:49.842262,24.030764?q=Town hall in Lviv", "0", true,"Rynok Square, 1, L'viv, L'vivs'ka oblast, Ukraine, 79000"));
+                cityData.add(new City("Italian courtyard", R.drawable.lviw,0,0, "geo:49.841562,24.031144?q=Italian courtyard","0", true,"Rynok Square, 6, L'viv, L'vivs'ka oblast, 79000"));
+                cityData.add(new City("Town hall in Lviv", R.drawable.townhalllviv,0,0, "geo:49.842262,24.030764?q=Town hall in Lviv", "0", true,"Rynok Square, 1, L'viv, L'vivs'ka oblast, Ukraine, 79000"));
                 //cityData.add(new City("Kharkiv", R.drawable.kharkiv, "geo:49.842262,24.030764?=", "0", true,"vul. Saint Ostapuchi"));
                 break;
             /*case "Kharkov":
@@ -115,6 +117,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 intent.putExtra("adress",adress);
                // intent.putExtra("description",description);
                 intent.putExtra("imgurl",imgurl);
+                intent.putExtra("imgUrl1",imgUrl1);
+            intent.putExtra("imgUrl2",imgUrl2);
                 intent.putExtra("location",location);
 
          ccontext.startActivity(intent);
