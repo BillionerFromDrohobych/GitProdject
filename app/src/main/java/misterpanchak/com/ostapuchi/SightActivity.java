@@ -19,7 +19,7 @@ ImageView imgview;
 ImageButton imageButton;
 Intent intent1;
 TextView tx3;
-Button button;
+ImageView imageView3;
     String geo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,8 @@ Button button;
         String name = intent.getExtras().getString("name");
         String adress = intent.getExtras().getString("adress");
         int imgurl = intent.getExtras().getInt("imgurl");
-        button = findViewById(R.id.button);
-        button.setOnClickListener(this);
+        imageView3 = findViewById(R.id.imageView3);
+        imageView3.setOnClickListener(this);
 
        geo = intent.getExtras().getString("location");
         imgview = (ImageView) findViewById(R.id.imageView2);
@@ -53,7 +53,7 @@ Button button;
                 intent1.setData(Uri.parse(geo));
                 startActivity(intent1);
                 break;
-            case R.id.button:
+            case R.id.imageView3:
                 intent1 = new Intent(this, ActivityActivity.class);
 
                 startActivity(intent1);

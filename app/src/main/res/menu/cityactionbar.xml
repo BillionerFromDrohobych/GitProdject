@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/action_bar"
-        android:image="@drawable/maps_button"
+        android:foreground="@drawable/maps_button"
         android:title=""
 
         app:showAsAction="always" />
