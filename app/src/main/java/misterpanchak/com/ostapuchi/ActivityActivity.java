@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.SearchManager;
 import android.app.SearchableInfo;
 import android.content.Context;
+import android.graphics.drawable.Icon;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -27,6 +28,7 @@ public class ActivityActivity extends AppCompatActivity {
     List<City> cityList;
     RecyclerViewAdapter adp;
     RecyclerView rv;
+    Icon icon;
 
 
 
@@ -77,6 +79,16 @@ public class ActivityActivity extends AppCompatActivity {
         }
             adp.filteredListed(filteredList);
     }
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.actionbar, menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId()){
 
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 }
