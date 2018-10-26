@@ -28,16 +28,12 @@ public class ActivityActivity extends AppCompatActivity {
     RecyclerViewAdapter adp;
     RecyclerView rv;
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity);
         cityList = new ArrayList<>();
-        cityList.add(new City("Kiev", R.drawable.kiev, "", "s", false, "vul. Saint Ostapuchi"));
+        cityList.add(new City("Kyiv", R.drawable.kiev, "", "s", false, "vul. Saint Ostapuchi"));
         cityList.add(new City("Lviv", R.drawable.lviw, "", "0", false, "vul. Saint Ostapuchi"));
         cityList.add(new City("Drohobych", R.drawable.drogobych, "", "0", false, "vul. Saint Ostapuchi"));
         cityList.add(new City("London", R.drawable.london, "", "0", false, "vul. Saint Ostapuchi"));
