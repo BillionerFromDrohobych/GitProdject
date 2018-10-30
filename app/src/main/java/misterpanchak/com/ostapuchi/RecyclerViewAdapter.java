@@ -118,7 +118,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                // intent.putExtra("description",description);
                 intent.putExtra("imgurl",imgurl);
                 intent.putExtra("imgUrl1",imgUrl1);
-            intent.putExtra("imgUrl2",imgUrl2);
+                intent.putExtra("imgUrl2",imgUrl2);
                 intent.putExtra("location",location);
 
          ccontext.startActivity(intent);
