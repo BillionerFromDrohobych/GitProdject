@@ -15,17 +15,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.chrisbanes.photoview.PhotoView;
+
 public class SightActivity extends AppCompatActivity implements View.OnClickListener {
+    int imgurl, imgurl1, imgurl2;
     TextView textView;
-    ImageView imgview;
+    ImageView imageview;
 
     ImageButton imageButton;
     Intent intent1;
     TextView tx3;
-
+    ImageView imageView3, imageView5, imageView6;
 
 
     String geo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +38,9 @@ public class SightActivity extends AppCompatActivity implements View.OnClickList
         Intent intent = getIntent();
         String name = intent.getExtras().getString("name");
         String adress = intent.getExtras().getString("adress");
-        int imgurl = intent.getExtras().getInt("imgurl");
-        int imgurl1 = intent.getExtras().getInt("imgUrll");
-        int imgurl2 = intent.getExtras().getInt("imgUrl2");
+        imgurl = intent.getExtras().getInt("imgurl");
+        imgurl1 = intent.getExtras().getInt("imgUrl1");
+        imgurl2 = intent.getExtras().getInt("imgUrl2");
 
 
 
@@ -44,17 +48,34 @@ public class SightActivity extends AppCompatActivity implements View.OnClickList
 
 
         geo = intent.getExtras().getString("location");
-        imgview = (ImageView) findViewById(R.id.imageView2);
+        imageview = (ImageView) findViewById(R.id.imageView2);
         textView = (TextView) findViewById(R.id.textView);
         imageButton = (ImageButton) findViewById(R.id.imageButton);
         tx3 = (TextView) findViewById(R.id.textView3);
         textView.setText(name);
-        imgview.setImageResource(imgurl);
+        imageview.setImageResource(imgurl);
         tx3.setText(adress);
         imageButton.setOnClickListener(this);
+        imageView3 = (ImageView) findViewById(R.id.imageView3);
+        imageView5 = (ImageView) findViewById(R.id.imageView5);
+        imageView6 = (ImageView) findViewById(R.id.imageView6);
+        imageView3.setImageResource(imgurl1);
+        imageView5.setImageResource(imgurl2);
+        imageView6.setImageResource(imgurl);
+        imageView3.setOnClickListener(this);
+        imageView5.setOnClickListener(this);
+        imageView6.setOnClickListener(this);
+
+
 
 
     }
+
+
+
+
+
+
 
     @Override
     public void onClick(View v) {
@@ -65,9 +86,23 @@ public class SightActivity extends AppCompatActivity implements View.OnClickList
                 intent1.setData(Uri.parse(geo));
                 startActivity(intent1);
                 break;
+            case R.id.imageView3:
+                imageview.setImageResource(imgurl1);
 
+                break;
+            case R.id.imageView5:
+                imageview.setImageResource(imgurl2);
+
+
+                break;
+            case R.id.imageView6:
+                imageview.setImageResource(imgurl);
+                break;
         }
     }
+
+
+
 
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.cityactionbar, menu);

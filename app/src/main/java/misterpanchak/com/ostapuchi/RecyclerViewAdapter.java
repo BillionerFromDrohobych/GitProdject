@@ -85,9 +85,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             break;
             case "Lviv":
                 cityData.clear();
-                cityData.add(new City("Italian courtyard", R.drawable.lviw,0,0, "geo:49.841562,24.031144?q=Italian courtyard","0", true,"Rynok Square, 6, L'viv, L'vivs'ka oblast, 79000"));
-                cityData.add(new City("Town hall in Lviv", R.drawable.townhalllviv,0,0, "geo:49.842262,24.030764?q=Town hall in Lviv", "0", true,"Rynok Square, 1, L'viv, L'vivs'ka oblast, Ukraine, 79000"));
-                cityData.add(new City("Black House", R.drawable.black_house, 0, 0, "geo:49.841562,24.031144?q=Black House","0",true, "Market Square, 18, Lviv, Lviv Oblast, 79000" ));
+                cityData.add(new City("Hotel ibis Styles ", R.drawable.ibis, R.drawable.ibis1, R.drawable.ibis2, "geo:49.837358,24.035014?q=Hotel ibis Styles","0", true,"3 Shukhevycha str., Lviv, Lviv region, 79000"));
+                cityData.add(new City("Lviv high castle", R.drawable.high,R.drawable.high1,R.drawable.high2, "geo:49.848289,24.039417?q=Lviv high Castle", "0", true,"Lviv High Castle, Lviv, Lviv region, 79000"));
+                cityData.add(new City("Black House", R.drawable.black_house, R.drawable.black_house1, R.drawable.black_house2, "geo:49.841562,24.031144?q=Black House","0",true, "Market Square, 18, Lviv, Lviv Oblast, 79000 "));
+                cityData.add(new City("Lviv City Wall", R.drawable.wall, R.drawable.wall1, R.drawable.wall2, "geo: 49.839696,24.035767?q=Lviv City Wall","0",true, " Volodymyr Vynnychenko street, 3, Lviv, Lviv region, 79000"));
+
                 break;
             /*case "Kharkov":
                 cityData.clear();
