@@ -1,19 +1,18 @@
 package misterpanchak.com.ostapuchi;
 
-import android.content.ClipData;
+
 import android.content.Intent;
-import android.graphics.drawable.Icon;
+
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.github.chrisbanes.photoview.PhotoView;
 
@@ -41,6 +40,7 @@ public class SightActivity extends AppCompatActivity implements View.OnClickList
         imgurl = intent.getExtras().getInt("imgurl");
         imgurl1 = intent.getExtras().getInt("imgUrl1");
         imgurl2 = intent.getExtras().getInt("imgUrl2");
+
 
 
 
