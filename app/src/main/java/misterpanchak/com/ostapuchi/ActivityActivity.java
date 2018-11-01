@@ -93,9 +93,9 @@ public class ActivityActivity extends AppCompatActivity {
                 cityList.clear();
                 cityList.add(new City("Kyiv", R.drawable.kiev,0,0,"", "s", false, "vul. Saint Ostapuchi"));
                 cityList.add(new City("Lviv", R.drawable.lviw,0,0,"", "s", false, "vul. Saint Ostapuchi"));
-                cityList.add(new City("Drohobych", R.drawable.drogobych,0,0,"", "s", false, "vul. Saint Ostapuchi"));
-                cityList.add(new City("London", R.drawable.london,0,0,"", "s", false, "vul. Saint Ostapuchi"));
-                cityList.add(new City("Kharkov", R.drawable.kharkiv,0,0,"", "s", false, "vul. Saint Ostapuchi"));
+                //cityList.add(new City("Drohobych", R.drawable.drogobych,0,0,"", "s", false, "vul. Saint Ostapuchi"));
+                //cityList.add(new City("London", R.drawable.london,0,0,"", "s", false, "vul. Saint Ostapuchi"));
+                //cityList.add(new City("Kharkov", R.drawable.kharkiv,0,0,"", "s", false, "vul. Saint Ostapuchi"));
                adp.notifyDataSetChanged();
 
                 return true;

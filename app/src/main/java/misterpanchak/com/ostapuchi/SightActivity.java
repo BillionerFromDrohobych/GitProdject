@@ -1,6 +1,5 @@
 package misterpanchak.com.ostapuchi;
 
-
 import android.content.Intent;
 
 import android.net.Uri;
@@ -26,9 +25,7 @@ public class SightActivity extends AppCompatActivity implements View.OnClickList
     TextView tx3;
     ImageView imageView3, imageView5, imageView6;
 
-
     String geo;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +38,7 @@ public class SightActivity extends AppCompatActivity implements View.OnClickList
         imgurl1 = intent.getExtras().getInt("imgUrl1");
         imgurl2 = intent.getExtras().getInt("imgUrl2");
 
-
-
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         geo = intent.getExtras().getString("location");
         imageview = (ImageView) findViewById(R.id.imageView2);
@@ -65,17 +58,7 @@ public class SightActivity extends AppCompatActivity implements View.OnClickList
         imageView3.setOnClickListener(this);
         imageView5.setOnClickListener(this);
         imageView6.setOnClickListener(this);
-
-
-
-
     }
-
-
-
-
-
-
 
     @Override
     public void onClick(View v) {
@@ -88,21 +71,15 @@ public class SightActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.imageView3:
                 imageview.setImageResource(imgurl1);
-
                 break;
             case R.id.imageView5:
                 imageview.setImageResource(imgurl2);
-
-
                 break;
             case R.id.imageView6:
                 imageview.setImageResource(imgurl);
                 break;
         }
     }
-
-
-
 
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.cityactionbar, menu);
